@@ -9,3 +9,5 @@ class Presenter:
 
         libtcod.console_init_root(window_width, window_height, window_title, False)
 
+    def is_window_open(self):
+        return not libtcod.console_is_window_closed()
