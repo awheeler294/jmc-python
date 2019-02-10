@@ -13,3 +13,5 @@ class DisplaySystem:
         for e in entities:
             dc = e.get(DisplayComponent)
             self._root_console.draw_char(dc.x, dc.y, dc.character, dc.color)
+
+        libtcodpy.flush()
